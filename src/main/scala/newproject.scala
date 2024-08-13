@@ -10,5 +10,6 @@ object newproject {
 
     val df=spark.read.format("csv").option("header","true").option("delimiter",",").load("C:\\Users\\HP\\Desktop\\new_file.txt")
   df.show()
+    df.printSchema()
   }
 }
